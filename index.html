@@ -9,26 +9,19 @@
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">Athlete<span>Mindset</span></div>
-        
-        <!-- Hamburger Menu Icon -->
         <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
         </div>
-
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">Our Team</a></li>
             <li><a href="#contact" class="btn-primary">Get Started</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <header id="home" class="hero">
         <div class="hero-content">
             <h1>Optimise Your <span class="highlight">Performance</span></h1>
@@ -40,53 +33,61 @@
         </div>
     </header>
 
-    <!-- Dashboard/Services Section -->
     <section id="services" class="dashboard-section">
         <h2 class="section-title">Performance Dashboard</h2>
         <div class="dashboard-grid">
-            <div class="card">
-                <div class="card-icon blue">🧠</div>
-                <h3>Mindset</h3>
-                <p>Build mental resilience and focus for high-pressure moments.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon green">🥗</div>
-                <h3>Nutrition</h3>
-                <p>Fuel your body with expert-led advice on recovery and energy.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon yellow">🤝</div>
-                <h3>Bonding</h3>
-                <p>Interactive activities to foster trust and team success.</p>
-            </div>
+            <!-- Clickable Service Card -->
+            <a href="services/mindset.html" class="card-link">
+                <div class="card">
+                    <div class="card-icon blue">🧠</div>
+                    <h3>Mindset</h3>
+                    <p>Build mental resilience and focus for high-pressure moments.</p>
+                </div>
+            </a>
+            <a href="services/nutrition.html" class="card-link">
+                <div class="card">
+                    <div class="card-icon green">🥗</div>
+                    <h3>Nutrition</h3>
+                    <p>Fuel your body with expert-led advice on recovery and energy.</p>
+                </div>
+            </a>
+            <a href="services/bonding.html" class="card-link">
+                <div class="card">
+                    <div class="card-icon yellow">🤝</div>
+                    <h3>Bonding</h3>
+                    <p>Interactive activities to foster trust and team success.</p>
+                </div>
+            </a>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about-section">
         <div class="about-container">
             <h2>Our Founders</h2>
             <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-photo"></div>
-                    <h4>Rachel Dudley</h4>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo"></div>
-                    <h4>Kalli Cowles</h4>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo"></div>
-                    <h4>Ana Tormena</h4>
-                </div>
+                <a href="team/rachel.html" class="team-link">
+                    <div class="team-member">
+                        <img src="assets/rachel.jpg" alt="Rachel Dudley" class="member-photo">
+                        <h4>Rachel Dudley</h4>
+                    </div>
+                </a>
+                <a href="team/kalli.html" class="team-link">
+                    <div class="team-member">
+                        <img src="assets/kalli.jpg" alt="Kalli Cowles" class="member-photo">
+                        <h4>Kalli Cowles</h4>
+                    </div>
+                </a>
+                <a href="team/ana.html" class="team-link">
+                    <div class="team-member">
+                        <img src="assets/ana.jpg" alt="Ana Tormena" class="member-photo">
+                        <h4>Ana Tormena</h4>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Athlete Mindset</p>
-    </footer>
-
+    <footer><p>&copy; 2026 Athlete Mindset</p></footer>
     <script src="script.js"></script>
 </body>
 </html>

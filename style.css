@@ -60,9 +60,59 @@ body { font-family: 'Open Sans', sans-serif; background-color: #F8FAFC; overflow
 .blue { background: var(--soft-blue); } .green { background: var(--light-green); } .yellow { background: var(--accent-yellow); }
 
 .team-grid { display: flex; justify-content: center; gap: 20px; margin-top: 30px; }
-.member-photo { width: 100px; height: 100px; background: #cbd5e1; border-radius: 50%; margin: 0 auto 10px; }
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 5px solid white;
+    object-fit: cover; /* This stops the photo from looking squashed */
+    display: block;
+    background: #cbd5e1; /* Fallback color if image fails to load */
+}
+
+/* Adjust size for the smaller icons on the home page if needed */
+.team-grid .member-photo {
+    width: 120px;
+    height: 120px;
+}
 
 footer { padding: 2rem; text-align: center; background: var(--text-dark); color: white; }
+
+/* For linking to subpages */
+.card-link, .team-link {
+    text-decoration: none;
+    color: inherit; /* Keeps the text dark */
+    display: block;
+}
+
+.team-link:hover .member-photo {
+    border: 5px solid var(--primary-blue);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Page content style for sub-pages */
+.page-header {
+    padding: 100px 10% 50px;
+    background: var(--soft-blue);
+    text-align: center;
+}
+
+.content-section {
+    padding: 50px 10%;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
 
 /* ========================================== */
 /* MOBILE RESPONSIVE RULES (The Fix)          */
