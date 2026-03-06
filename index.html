@@ -10,20 +10,24 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">Athlete<span>Mindset</span></div>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        <div class="nav-content"> <!-- Uses nav-content instead of container -->
+            <div class="logo">Athlete<span>Mindset</span></div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">Our Team</a></li>
+                <li><a href="#contact" class="btn-primary">Get Started</a></li>
+            </ul>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">Our Team</a></li>
-            <li><a href="#contact" class="btn-primary">Get Started</a></li>
-        </ul>
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-content">
+        <div class="container">
             <h1>Optimise Your <span class="highlight">Performance</span></h1>
             <p>Empowering young athletes through mindset coaching, nutrition, and elite team bonding.</p>
             <div class="hero-btns">
@@ -34,52 +38,53 @@
     </header>
 
     <section id="services" class="dashboard-section">
-        <h2 class="section-title">Performance Dashboard</h2>
-        <div class="dashboard-grid">
-            <!-- Clickable Service Card -->
-            <a href="services/mindset.html" class="card-link">
-                <div class="card">
-                    <div class="card-icon blue">🧠</div>
-                    <h3>Mindset</h3>
-                    <p>Build mental resilience and focus for high-pressure moments.</p>
-                </div>
-            </a>
-            <a href="services/nutrition.html" class="card-link">
-                <div class="card">
-                    <div class="card-icon green">🥗</div>
-                    <h3>Nutrition</h3>
-                    <p>Fuel your body with expert-led advice on recovery and energy.</p>
-                </div>
-            </a>
-            <a href="services/bonding.html" class="card-link">
-                <div class="card">
-                    <div class="card-icon yellow">🤝</div>
-                    <h3>Bonding</h3>
-                    <p>Interactive activities to foster trust and team success.</p>
-                </div>
-            </a>
+        <div class="container">
+            <h2 style="text-align: center;">Performance Dashboard</h2>
+            <div class="dashboard-grid">
+                <a href="services/mindset.html" class="card-link">
+                    <div class="card">
+                        <div class="card-icon blue">🧠</div>
+                        <h3>Mindset</h3>
+                        <p>Build mental resilience and focus for high-pressure moments.</p>
+                    </div>
+                </a>
+                <a href="services/nutrition.html" class="card-link">
+                    <div class="card">
+                        <div class="card-icon green">🥗</div>
+                        <h3>Nutrition</h3>
+                        <p>Fuel your body with expert-led advice on recovery and energy.</p>
+                    </div>
+                </a>
+                <a href="services/bonding.html" class="card-link">
+                    <div class="card">
+                        <div class="card-icon yellow">🤝</div>
+                        <h3>Bonding</h3>
+                        <p>Interactive activities to foster trust and team success.</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
     <section id="about" class="about-section">
-        <div class="about-container">
-            <h2>Our Founders</h2>
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 20px;">Our Founders</h2>
             <div class="team-grid">
                 <a href="team/rachel.html" class="team-link">
-                    <div class="team-member">
-                        <img src="assets/rachel.jpg" alt="Rachel Dudley" class="member-photo">
+                    <div class="team-member" style="text-align: center;">
+                        <img src="assets/rachel.jpg" alt="Rachel" class="member-photo">
                         <h4>Rachel Dudley</h4>
                     </div>
                 </a>
                 <a href="team/kalli.html" class="team-link">
-                    <div class="team-member">
-                        <img src="assets/kalli.jpg" alt="Kalli Cowles" class="member-photo">
+                    <div class="team-member" style="text-align: center;">
+                        <img src="assets/kalli.jpg" alt="Kalli" class="member-photo">
                         <h4>Kalli Cowles</h4>
                     </div>
                 </a>
                 <a href="team/ana.html" class="team-link">
-                    <div class="team-member">
-                        <img src="assets/ana.jpg" alt="Ana Tormena" class="member-photo">
+                    <div class="team-member" style="text-align: center;">
+                        <img src="assets/ana.jpg" alt="Ana" class="member-photo">
                         <h4>Ana Tormena</h4>
                     </div>
                 </a>
